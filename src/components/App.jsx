@@ -11,14 +11,7 @@ export function App() {
   };
 
   return (
-    <AppDiv
-      style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr',
-        gridGap: 16,
-        paddingBottom: 24,
-      }}
-    >
+    <AppDiv>
       <Searchbar onFormSubmit={acquireQuery} />
       <ImageGallery searchInput={query} />
     </AppDiv>
